@@ -1,0 +1,187 @@
+:root {
+    --c-p: #7380ec;
+    --c-danger: #ff7782;
+    --c-warning: #ffbb55;
+    --c-success: #41f1b6;
+    --c-white: #fff;
+    --c-info-dark: #7d8da1;
+    --c-info-light: #dce1eb;
+    --c-dark: #363949;
+    --c-light: rgba(132, 139, 200, 0.18);
+    --c-primary-variant: #111e88;
+    --c-dark-variant: #677483;
+    --c-background: #f6f6f9;
+
+    --card-border-radius: 2rem;
+    --border-r-1: 0.4rem;
+    --border-r-2: 0.8rem;
+    --border-r-3: 1.2rem;
+
+    --card-padding: 1.8rem;
+    --padding: 1.2rem;
+
+    --box-shadow: 0 2rem 3rem var(var(--c-light));
+}
+
+@media screen and (max-width: 1200px) {
+    .containers {
+        width: 94%;
+        grid-template-columns: 7rem auto 23rem;
+    }
+
+    aside .logo h2 {
+        display: none;
+    }
+
+    aside .sidebar h3 {
+        display: none;
+    }
+
+    aside .sidebar a {
+        width: 5.6rem;
+    }
+
+    aside .sidebar a:last-child {
+        position: relative;
+        margin-top: 1.8rem !important;
+    }
+
+    main .insights {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    main .recent-order {
+        width: 94%;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        margin: 2rem 0 0 8.8rem !important;
+    }
+
+    main .recent-order table {
+        width: 83vw;
+    }
+
+    main table thead tr th:last-child,
+    main table thead tr th:first-child {
+        display: none;
+    }
+
+    main table tbody tr td:last-child,
+    main table tbody tr td:first-child {
+        display: none;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .containers {
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
+
+    aside {
+        position: fixed;
+        left: -100%;
+        background: var(--c-white);
+        width: 18rem;
+        z-index: 3;
+        box-shadow: 1rem 3rem 4rem var(--c-light);
+        height: 100vh;
+        padding-right: var(--card-padding) !important;
+        display: none;
+        animation: showMenu 400ms ease forwards;
+    }
+    @keyframes showMenu {
+        to{
+            left: 0;
+        }
+    }
+    aside .logo {
+        margin-left: 1rem !important;
+    }
+
+    aside .sidebar h2,
+    h3 {
+        display: inline !important;
+    }
+
+    aside .sidebar a {
+        width: 100%;
+        height: 3.4rem;
+    }
+
+    aside .sidebar a:last-child {
+        position: absolute;
+        bottom: 5rem;
+    }
+
+    aside .close-btn {
+        display: inline-block !important;
+        cursor: pointer;
+    }
+
+    main {
+        margin-right: 8rem !important;
+        padding: 0 1rem !important;
+    }
+
+    main .recent-order {
+        position: relative;
+        margin: 3rem 0 0 0 !important;
+        width: 100%;
+    }
+    main .recent-order table{
+        width: 100%;
+        margin: 0 !important;
+    }
+    main .dash-h1{
+        margin-top: 5rem !important;
+        text-align: center;
+        transform: translateX(10%);
+
+    }
+    main .date{
+        align-items: center;
+        transform: translateX(90%);
+        margin-bottom: 10px !important;
+    }
+    main .insights>div{
+        margin: 0 auto 4rem !important;
+        width: 100%;
+        position: relative;
+        left: 3rem;
+    }
+    main .recent-order{
+        text-align: center;
+        position: relative;
+        left: 62%;
+    }
+    .right .top{
+        position: fixed;
+        top: 0;
+        left: 0;
+        align-items: center;
+        padding: 0 0.8rem !important;
+        height: 4.6rem;
+        background: var(--c-white);
+        width: 100%;
+        margin: 0 !important;
+        z-index: 2;
+        box-shadow: 0 1rem 1rem var(--c-light);
+    }
+    .right .top .theme-toggler{
+        width: 4.4rem;
+        position: absolute;
+        left: 66%;
+    }
+    .right .profile .info{
+        display: none;
+    }
+    .right .top button{
+        display: inline-block;
+        background-color: transparent;
+        position: absolute;
+        left: 1rem;
+    }
+}

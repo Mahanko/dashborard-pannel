@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard pannel</title>
+    <!-- css  -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- responsive  -->
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+    <div class="lang" id="lang">
+        <h1>تنظیمات</h1>
+        <div id="colse-setting">
+            <img width="48" height="48" src="https://img.icons8.com/material-two-tone/48/delete-sign.png" alt="delete-sign"/>
+        </div>
+        <div class="lan" id="lan">
+            <a href="../index.html">انگلیسی</a>
+            <a href="../index.html">پیشفرض</a>
+            <a href="#">فارسی</a>
+        </div>
+    </div>
+    <div class="containers">
+        <!-- ...............leftside................. -->
+        <aside id="aside">
+            <div class="top">
+                <div class="logo">
+                    <img src="../images/logo.png" class="logo" alt="logo">
+                    <h2>Dash<span class="danger">Board</span></h2>
+                </div>
+                <div class="close-btn" id="close-btn">
+                    <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/delete-sign--v1.png"
+                        alt="delete-sign--v1" />
+                </div>
+            </div>
+
+            <div class="sidebar">
+                <a href="#">
+                    <img width="50" height="50"
+                        src="https://img.icons8.com/external-basicons-solid-edtgraphics/50/external-Grid-grids-basicons-solid-edtgraphics-8.png"
+                        alt="external-Grid-grids-basicons-solid-edtgraphics-8" />
+                    <h3>پنل کار</h3>
+                </a>
+                <a href="#" class="active">
+                    <img width="32" height="32" src="https://img.icons8.com/windows/32/gender-neutral-user.png"
+                        alt="gender-neutral-user" />
+                    <h3>پنل کاربری</h3>
+                </a>
+                <a href="#">
+                    <img width="40" height="40" src="https://img.icons8.com/wired/64/paper.png" alt="paper" />
+                    <h3>فروش ها</h3>
+                </a>
+                <a href="#">
+                    <img width="40" height="40" src="https://img.icons8.com/dotty/80/statistics.png" alt="statistics" />
+                    <h3>آنالیز ها</h3>
+                </a>
+                <a href="#">
+                    <img width="48" height="48" src="https://img.icons8.com/parakeet-line/48/message-group.png"
+                        alt="message-group" />
+                    <h3>پیام ها</h3>
+                    <span class="message-count">3</span>
+                </a>
+                <a href="#">
+                    <img width="50" height="50" src="https://img.icons8.com/ios/50/check-inbox--v1.png"
+                        alt="check-inbox--v1" />
+                    <h3>کار های شما</h3>
+                </a>
+                <a href="#">
+                    <img width="50" height="50" src="https://img.icons8.com/ios/50/warning-shield.png"
+                        alt="warning-shield" />
+                    <h3>گذارش</h3>
+                </a>
+                <a href="#" id="setting">
+                    <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/settings.png"
+                        alt="settings" />
+                    <h3>تنظیمات</h3>
+                </a>
+                <a href="#">
+                    <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/plus-math.png"
+                        alt="plus-math" />
+                    <h3>اضافه کردن کار</h3>
+                </a>
+                <a href="#">
+                    <img width="50" height="50" src="https://img.icons8.com/ios/50/exit--v1.png" alt="exit--v1" />
+                    <h3>خروج</h3>
+                </a>
+            </div>
+        </aside>
+        <!-- ...............leftside................. -->
+
+        <!-- ...............centerside................. -->
+        <main dir="rtl">
+            <h1 class="dash-h1">پنل کاربری</h1>
+
+            <div class="date">
+                <input type="date" name="" id="">
+            </div>
+
+            <div class="insights" >
+                <div class="sales">
+                    <img width="32" height="32" src="https://img.icons8.com/windows/32/combo-chart.png"
+                        alt="combo-chart" />
+                    <div class="middle">
+                        <div class="left">
+                            <h3>بیشترین فروش</h3>
+                            <h1>$25,024</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="number">
+                                <p>81%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <small class="text-muted">24 ساعت اخیر</small>
+                </div>
+
+                <div class="expence">
+                    <img width="48" height="48" src="https://img.icons8.com/fluency-systems-filled/48/bar-chart.png"
+                        alt="bar-chart" />
+                    <div class="middle">
+                        <div class="left">
+                            <h3>مجموع هزینه ها</h3>
+                            <h1>$14.10</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="number">
+                                <p>81%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <small class="text-muted">24ساعت اخیر</small>
+                </div>
+
+                <div class="income">
+                    <img width="24" height="24" src="https://img.icons8.com/material-outlined/24/graph.png"
+                        alt="graph" />
+                    <div class="middle">
+                        <div class="left">
+                            <h3>درآمد کلی</h3>
+                            <h1>$10,34</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="number">
+                                <p>56%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <small class="text-muted">24ساعت اخیر</small>
+                </div>
+            </div>
+
+            <div class="recent-order">
+                <h2>سفارشات اخیر</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>نام پروژه</th>
+                            <th>شماره پروژه</th>
+                            <th>پرداخت</th>
+                            <th>وضعیت</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>تتریوم و بیتکوین</td>
+                            <td>85621</td>
+                            <td>دی ماه</td>
+                            <td class="warning">درحال پرداخت</td>
+                            <td class="primary">درباره</td>
+                        </tr>
+                        <tr>
+                            <td>تتریوم و بیتکوین</td>
+                            <td>85621</td>
+                            <td>دی ماه</td>
+                            <td class="warning">درحال پرداخت</td>
+                            <td class="primary">درباره</td>
+                        </tr>
+
+                        <tr>
+                            <td>تتریوم و بیتکوین</td>
+                            <td>85621</td>
+                            <td>دی ماه</td>
+                            <td class="warning">درحال پرداخت</td>
+                            <td class="primary">درباره</td>
+                        </tr>
+
+                        <tr>
+                            <td>تتریوم و بیتکوین</td>
+                            <td>85621</td>
+                            <td>دی ماه</td>
+                            <td class="warning">درحال پرداخت</td>
+                            <td class="primary">درباره</td>
+                        </tr>
+
+                        <tr>
+                            <td>تتریوم و بیتکوین</td>
+                            <td>85621</td>
+                            <td>دی ماه</td>
+                            <td class="warning">درحال پرداخت</td>
+                            <td class="primary">درباره</td>
+                        </tr>
+
+                        <tr>
+                            <td>تتریوم و بیتکوین</td>
+                            <td>85621</td>
+                            <td>دی ماه</td>
+                            <td class="warning">درحال پرداخت</td>
+                            <td class="primary">درباره</td>
+                        </tr>
+                        <tr>
+                            <td>تتریوم و بیتکوین</td>
+                            <td>85621</td>
+                            <td>دی ماه</td>
+                            <td class="warning">درحال پرداخت</td>
+                            <td class="primary">درباره</td>
+                        </tr>
+                        <tr>
+                            <td>تتریوم و بیتکوین</td>
+                            <td>85621</td>
+                            <td>دی ماه</td>
+                            <td class="warning">درحال پرداخت</td>
+                            <td class="primary">درباره</td>
+                        </tr>
+                        <tr>
+                            <td>تتریوم و بیتکوین</td>
+                            <td>85621</td>
+                            <td>دی ماه</td>
+                            <td class="warning">درحال پرداخت</td>
+                            <td class="primary">درباره</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <a href="#">بیشتر ببینید</a>
+            </div>
+        </main>
+        <!-- ...............centerside................. -->
+        <!-- right side  -->
+        <div class="right">
+            <div class="top">
+                <button id="menu-btn">
+                    <img width="50" height="50" src="https://img.icons8.com/ios/50/menu--v1.png" alt="menu--v1" />
+                </button>
+                <div class="theme-toggler" id="theme-toggler">
+                    <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/bright-moon--v1.png"
+                        alt="bright-moon--v1" />
+                </div>
+                <div class="profile">
+                    <div class="info">
+                        <p>Hi , <b>Mahan</b></p>
+                        <small class="text-muted">Admin</small>
+                    </div>
+                </div>
+                <div class="profile-photo">
+                    <img src="../images/profile-1.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="recent-updates" dir="rtl">
+                <h2>جدیدترین آپدیت</h2>
+                <div class="updates">
+                    <div class="update">
+                        <div class="profile-photo">
+                            <img src="../images/profile-2.jpg" alt="">
+                        </div>
+                        <div class="message">
+                            <p><b>محمد</b> لورم ایپسوم یک کتن از قبل طراحی شده است.</p>
+                            <small class="text-muted">10 دقیقه پیش</small>
+                        </div>
+                    </div>
+                    <div class="update"  dir="rtl">
+                        <div class="profile-photo">
+                            <img src="../images/profile-3.jpg" alt="">
+                        </div>
+                        <div class="message">
+                            <p><b>یسنا</b> لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</p>
+                            <small class="text-muted">5 دقیقه پیش</small>
+                        </div>
+                    </div>
+                    <div class="update">
+                        <div class="profile-photo">
+                            <img src="../images/profile-4.jpg" alt="">
+                        </div>
+                        <div class="message">
+                            <p><b>مائده</b> لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است</p>
+                            <small class="text-muted">8 دقیقه پیش</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sales-analytics" dir="rtl">
+                <h2>آنالیز های قابل فروش</h2>
+                <div class="item online">
+                    <div class="icon">
+                        <img width="64" height="64" src="https://img.icons8.com/sf-black-filled/64/shopping-cart.png"
+                            alt="shopping-cart" />
+                    </div>
+                    <div class="right">
+                        <div class="info">
+                            <h3>خرید آنلاین</h3>
+                            <small class="text-muted">24 ساعت پیش</small>
+                        </div>
+                        <h5 class="success">+39%</h5>
+                        <h3>3892</h3>
+                    </div>
+                </div>
+                <div class="item offline">
+                    <div class="icon">
+                        <img width="64" height="64" src="https://img.icons8.com/pastel-glyph/64/shopping-bag--v2.png"
+                            alt="shopping-bag--v2" />
+                    </div>
+                    <div class="right">
+                        <div class="info">
+                            <h3>پروژه افلاین</h3>
+                            <small class="text-muted">12ساعت پیش</small>
+                        </div>
+                        <h5 class="danger">-19%</h5>
+                        <h3>1270</h3>
+                    </div>
+                </div>
+                <div class="item customers">
+                    <div class="icon">
+                        <img width="32" height="32"
+                            src="https://img.icons8.com/puffy-filled/32/experimental-user-puffy-filled.png"
+                            alt="experimental-user-puffy-filled" />
+                    </div>
+                    <div class="right">
+                        <div class="info">
+                            <h3>تخفیف تازه کار ها</h3>
+                            <small class="text-muted">Last 24 Hours</small>
+                        </div>
+                        <h5 class="success">+25%</h5>
+                        <h3>849</h3>
+                    </div>
+                </div>
+                <div class="item add-product">
+                    <div>
+                        <img width="24" height="24" src="https://img.icons8.com/material-rounded/24/plus-math--v1.png"
+                            alt="plus-math--v1" />
+                            <h3>اضافه کردن پروژه</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+    </div>
+
+
+    <!-- script  -->
+    <script src="jquery.js"></script>
+    <script src="index2.js"></script>
+</body>
+
+</html>
